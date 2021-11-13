@@ -350,12 +350,23 @@ img {
     color: var(--main-blue-color)
 }
 
-/* ----PORTFOLIO PAGE---- */
+/* ---------------------PORTFOLIO PAGE--------------------- */
 .main-title {
     visibility: hidden;
 }
 /* PROJECTS-LIST */
+.projects-filter-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 34px;
+    justify-content: center;
+    height: auto;
+}
+.projects-filter-item:not(:last-child) {
+    margin-right: 8px;
+}
 .filter-btn {
+    padding: 6px 22px 6px 22px;
     border: none;
     border-radius: 4px;
     font-family: Roboto,sans-serif;
@@ -369,8 +380,6 @@ img {
     cursor: pointer;
 }
 .filter-btn.current {
-    border: none;
-    border-radius: 4px;
     background-color: var(--main-blue-color);
     color: var(--main-white-color);
 }
@@ -379,6 +388,13 @@ img {
 .filter-btn:active {
     background-color: var(--main-blue-color);
     color: var(--main-white-color);
+}
+.projects-list {
+    display: flex;
+    flex-wrap: wrap;
+}
+.projects-item:not(:last-child) {
+    margin-right: 30px;
 }
 .projects-subtitle {
     font-family: Roboto, sans-serif;
