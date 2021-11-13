@@ -393,8 +393,9 @@ img {
     display: flex;
     flex-wrap: wrap;
 }
-.projects-item:not(:last-child) {
-    margin-right: 30px;
+.projects-item {margin-right: 30px;}
+.projects-item:nth-child(3n) {
+    margin-right: 0px;
 }
 .projects-subtitle {
     font-family: Roboto, sans-serif;
