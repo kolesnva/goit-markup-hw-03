@@ -12,6 +12,7 @@ body {font-family: roboto, sans-serif;}
     --secondary-background-color: #F5F4FA;
     --third-background-color: #E5E5E5;
     --header-bottom-border-color: #ECECEC;
+    --portfolio-item-border-color: #EEEEEE;
 }
 /* RESET */
 .link {
@@ -48,6 +49,7 @@ img {
 .section {
     padding-top: 94px;
     padding-bottom: 94px;
+    margin: 0px auto;
 }
 /* HEADER POS */
 .header-container {
@@ -204,9 +206,6 @@ img {
     margin-left: auto;
     margin-right: auto;
 }
-.features-title {
-    visibility: hidden;
-}
 .features-list {
     display: flex;
     flex-wrap: wrap;
@@ -320,6 +319,10 @@ img {
     display: block;
     margin: 20px;
     margin-left: auto;
+    padding-top: 60px;
+}
+.footer-contacts-list {
+    padding-bottom: 60px;
 }
 .footer-contacts-item-adress {
     margin-bottom: 9px;
@@ -351,9 +354,6 @@ img {
 }
 
 /* ---------------------PORTFOLIO PAGE--------------------- */
-.main-title {
-    visibility: hidden;
-}
 /* PROJECTS-LIST */
 .projects-filter-list {
     display: flex;
@@ -393,18 +393,25 @@ img {
     display: flex;
     flex-wrap: wrap;
 }
-.projects-item {margin-right: 30px;}
+.projects-item {
+    margin-right: 30px;
+    margin-bottom: 30px;
+}
 .projects-item:nth-child(3n) {
     margin-right: 0px;
 }
 .projects-subtitle {
+    padding-top: 20px;
+    margin-bottom: 4px;
     font-family: Roboto, sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 18px;
     line-height: 2.00;
     letter-spacing: 0.06em;
-    color: var(--secondary-black-color)
+    color: var(--secondary-black-color);
+    border-right: solid 1px var(--portfolio-item-border-color);
+    border-left: solid 1px var(--portfolio-item-border-color);
 }
 .projects-text {
     font-family: Roboto, sans-serif;
@@ -414,4 +421,19 @@ img {
     line-height: 1.87;
     letter-spacing: 0.03em;
     color: var(--main-text-color);
+    border-right: solid 1px var(--portfolio-item-border-color);
+    border-left: solid 1px var(--portfolio-item-border-color);
+    border-bottom: solid 1px var(--portfolio-item-border-color);
+}
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
 }
