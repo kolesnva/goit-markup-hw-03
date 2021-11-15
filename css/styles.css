@@ -43,6 +43,7 @@ img {
 /* CONTAINER */
 .container {
     width: 1200px;
+    margin: 0 auto;
     padding-right: 15px;
     padding-left: 15px;
 }
@@ -58,7 +59,19 @@ img {
     border-bottom: solid 1px var(--header-bottom-border-color);
 }
 /* LOGO */
-.logo {
+.header-logo {
+    margin-right: 93px;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    font-family: Raleway, sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    color: var(--main-blue-color);
+}
+.footer-logo-link {
     margin-right: 93px;
     font-family: Raleway, sans-serif;
     font-style: normal;
@@ -68,7 +81,7 @@ img {
     letter-spacing: 0.03em;
     color: var(--main-blue-color);
 }
-.logo-header {
+.r-logo-header {
     font-family: Raleway, sans-serif;
     font-style: normal;
     font-weight: 700;
@@ -239,6 +252,9 @@ img {
     color: var(--main-text-color);
     }
 /* OUR WORK SECTION */
+.our-work-section {
+    padding-top: 0px;
+}
 .our-work-title {
     margin-bottom: 50px;
     font-family: Roboto, sans-serif;
@@ -280,6 +296,7 @@ img {
     flex-wrap: wrap;
 }
 .our-team-member {
+    padding-bottom: 10px;
     font-family: Roboto, sans-serif;
     font-style: normal;
     font-weight: 500;
@@ -291,15 +308,14 @@ img {
 }
 .our-team-item {
     margin-right: 30px;
+    background-color: var(--main-white-color);
 }
 .our-team-item:nth-child(4n) {
     margin-right: 0px;
 }
-.our-team-item-img {
-    margin-bottom: 30px;
-}
-.our-team-member {
-    margin-bottom: 10px;
+.team-mate-info {
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
 .our-team-position {
     font-family: Roboto, sans-serif;
@@ -313,16 +329,14 @@ img {
 }
 /* FOOTER SECTION */
 .footer {
+    padding-top: 60px;
+    padding-bottom: 60px;
     background-color: var(--main-background-color);
 }
 .footer-logo-link {
     display: block;
-    margin: 20px;
+    margin-bottom: 20px;
     margin-left: auto;
-    padding-top: 60px;
-}
-.footer-contacts-list {
-    padding-bottom: 60px;
 }
 .footer-contacts-item-adress {
     margin-bottom: 9px;
@@ -358,9 +372,8 @@ img {
 .projects-filter-list {
     display: flex;
     flex-wrap: wrap;
-    margin-bottom: 34px;
+    margin-bottom: 50px;
     justify-content: center;
-    height: auto;
 }
 .projects-filter-item:not(:last-child) {
     margin-right: 8px;
@@ -400,9 +413,11 @@ img {
 .projects-item:nth-child(3n) {
     margin-right: 0px;
 }
-.projects-subtitle {
+.projects-text-container {
     padding-top: 20px;
-    margin-bottom: 4px;
+}
+.projects-subtitle {
+    padding-top: 4px;
     font-family: Roboto, sans-serif;
     font-style: normal;
     font-weight: 700;
